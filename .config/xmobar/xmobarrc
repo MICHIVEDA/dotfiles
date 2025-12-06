@@ -1,0 +1,12 @@
+Config
+  { font         = "xft:Mononoki Nerd Font:size=12"
+  , bgColor      = "#1c1f26"
+  , fgColor      = "#ffffff"
+  , position     = Top
+  , lowerOnStart = True
+  , commands     = [ Run XMonadLog, Run Memory ["-t","Mem: <usedratio>%"] 10, Run Date "%a %d %b %H:%M:%S" "date" 1, Run Com "/bin/sh" ["-c", "amixer get Master | grep -o '[0-9]\\+%' | head -n1"] "volume" 1]
+  , sepChar      = "%"
+  , alignSep     = "}{"
+  , template     = "%XMonadLog%}{%memory% : %volume% : %date%"      -- XMonad handles formatting via xmobarPP
+  }
+
