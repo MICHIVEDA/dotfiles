@@ -55,7 +55,10 @@ Plug 'lervag/vimtex', { 'tag': 'v2.15' }
 " Haskell syntax
 Plug 'neovimhaskell/haskell-vim'
 
-" Haskell language server client
+"Haskell Formatting
+Plug 'sdiehl/vim-ormolu'
+let g:ormolu_command = '/home/michi/.local/bin/ormolu'
+
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh'
@@ -68,11 +71,8 @@ Plug 'morhetz/gruvbox'
 
 call plug#end()
 
-" ---------------- LanguageClient configuration ----------------
-let g:LanguageClient_serverCommands = {
-    \ 'haskell': ['haskell-language-server-wrapper', '--lsp'],
-    \ }
-let g:LanguageClient_autoStart = 1
+
+
 
 "----------------- Gruvbox Configuration -----------------------
 if has("termguicolors")

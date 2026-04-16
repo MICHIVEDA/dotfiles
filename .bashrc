@@ -116,7 +116,8 @@ export PATH='/home/michi/.duckdb/cli/latest':$PATH
 export PATH="$HOME/main/ti-programming/CEdev/bin:$PATH"
 # Haskell tools
 export PATH="$HOME/.ghcup/bin:$HOME/.cabal/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
 
 [ -f "/home/michi/.ghcup/env" ] && . "/home/michi/.ghcup/env" # ghcup-env
-alias config='/usr/bin/git --git-dir=/home/michi/.cfg/ --work-tree=/home/michi'
 alias config='/usr/bin/git --git-dir=/home/michi/.cfg/ --work-tree=/home/michi'
